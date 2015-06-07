@@ -32,7 +32,7 @@ print("Reading File...")
 reader = csv.reader(input_file,delimiter='\t')  # creates the reader 
 raw_data = [r for r in reader]
 # Getting creation time to be used as the basis of serial number for records.
-serial_num=int(os.path.getctime(in_file_name))*1000
+serial_num=int(os.path.getctime(in_file_name))*100
 
 # Create output file
 try:
